@@ -11,6 +11,9 @@ app.use(express.json());
 //connect to mongodb local database
 connectToMongo();
 
+// Routes
+app.use('/',require('./routes/get_started'));
+
 //listening app
 app.listen(port, () => {
     console.log(`App is listening at port:${port}`);
