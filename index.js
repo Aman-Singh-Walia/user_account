@@ -13,6 +13,8 @@ connectToMongo();
 
 // Routes
 app.use('/',require('./routes/get_started'));
+app.use('/',require('./routes/signup'));
+
 
 //listening app
 app.listen(port, () => {
