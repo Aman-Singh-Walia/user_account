@@ -14,6 +14,7 @@ connectToMongo();
 // Routes
 app.use('/',require('./routes/get_started'));
 app.use('/',require('./routes/signup'));
+app.use('/',require('./routes/login'));
 
 
 //listening app
